@@ -1,0 +1,6 @@
+pandas
+matplotlib
+ipython
+jupyter
+openai
+python-dotenv
