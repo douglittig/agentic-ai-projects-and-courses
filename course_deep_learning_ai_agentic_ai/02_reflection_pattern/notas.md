@@ -1,6 +1,6 @@
 # Capítulo 2: O Padrão de Design de Reflexão (Reflection)
 
-**Baseado no Módulo 2 do curso de Andrew Ng (DeepLearning.AI)**
+*Baseado no Módulo 2 do curso de Andrew Ng (DeepLearning.AI)*
 
 ---
 

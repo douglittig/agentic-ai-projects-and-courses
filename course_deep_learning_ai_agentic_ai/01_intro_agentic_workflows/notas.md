@@ -1,6 +1,6 @@
 # Introdução à IA Agêntica e Workflows Agênticos
 
-**Baseado no curso de Andrew Ng (DeepLearning.AI)**
+*Baseado no curso de Andrew Ng (DeepLearning.AI)*
 
 ---
 
