@@ -515,7 +515,7 @@ def evaluate_tavily_results(TOP_DOMAINS, raw, min_ratio=0.4):
             flag = ratio >= min_ratio
 
             # Markdown report
-            report = f\"\"\"
+            report = f"""
 ### Evaluation — Tavily Top Domains
 - Total results: {total}
 - Trusted results: {trusted_count}
@@ -525,7 +525,7 @@ def evaluate_tavily_results(TOP_DOMAINS, raw, min_ratio=0.4):
 
 **Details:**
 {chr(10).join(details)}
-\"\"\"
+"""
             return flag, report
     except Exception:
         pass # Fallback to text parsing
@@ -538,10 +538,11 @@ def evaluate_tavily_results(TOP_DOMAINS, raw, min_ratio=0.4):
     urls = url_pattern.findall(raw_str)
 
     if not urls:
-        return False, \"\"\"### Evaluation — Tavily Top Domains
+        return False, """
+        ### Evaluation — Tavily Top Domains
 No URLs detected in the provided text. 
 Please include links in your research results.
-\"\"\"
+"""
 
     # Count trusted vs total
     total = len(urls)
@@ -563,7 +564,7 @@ Please include links in your research results.
     flag = ratio >= min_ratio
 
     # Markdown report
-    report = f\"\"\"
+    report = f"""
 ### Evaluation — Tavily Top Domains
 - Total results: {total}
 - Trusted results: {trusted_count}
@@ -573,5 +574,5 @@ Please include links in your research results.
 
 **Details:**
 {chr(10).join(details)}
-\"\"\"
+"""
     return flag, report
