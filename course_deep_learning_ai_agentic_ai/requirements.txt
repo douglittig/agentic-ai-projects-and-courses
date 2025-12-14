@@ -4,3 +4,5 @@ ipython
 jupyter
 openai
 python-dotenv
+aisuite
+anthropic
